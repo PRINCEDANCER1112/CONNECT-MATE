@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectMate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>ConnectMate</h1>
+        <button onclick="generateCode()">Generate Connection Code</button>
+        <p id="generatedCode"></p>
+        <input type="text" id="connectionCode" placeholder="Enter Connection Code" />
+        <button onclick="handleScreenShare()">Start/Stop Screen Share</button>
+
+        <h2>Location Tracking</h2>
+        <button onclick="getLocation()">Get Current Location</button>
+        <p id="locationDisplay"></p>
+
+        <h2>Screen Sharing Preview</h2>
+        <video id="screenVideo" autoplay></video>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
